@@ -42,8 +42,8 @@ pre {
     transform-style: preserve-3d;
     transform: 
         perspective(5000px)
-        rotateY(20deg)
-        rotateX(20deg);
+        rotateY(var(--rotateY))
+        rotateX(var(--rotateX));
 }
 
 .selector{
