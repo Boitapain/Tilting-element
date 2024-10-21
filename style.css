@@ -80,6 +80,8 @@ pre::before {
 
 pre::after {
     inset: -1rem;
-    background: linear-gradient(-45deg, red, blue);
+    background-image:
+        linear-gradient(to right, grey 1px, transparent 1px),
+        linear-gradient(to bottom, grey 1px, transparent 1px);
     transform: translateZ(-50px);
 }
