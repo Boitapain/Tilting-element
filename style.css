@@ -81,12 +81,9 @@ pre::before {
 pre::after {
     inset: -1rem;
     background: 
-        linear-gradient(-45deg, red, blue),
-        linear-gradient(to right, transparent 49%, var(--white) 50%, transparent 51%),
-        linear-gradient(to bottom, transparent 49%, var(--white) 50%, transparent 51%);
+        linear-gradient(white 1px, transparent 1px),  /* Horizontal grid lines */
+        linear-gradient(90deg, white 1px, transparent 1px); /* Vertical grid lines */
     background-size: 20px 20px; /* Adjust the size to your preference */
-    background-position: 0 0, 0 0, 0 0;
-    background-repeat: no-repeat, repeat, repeat; /* Keep the grid lines repeating */
     border-radius: inherit;
     transform: translateZ(-50px);
 }
