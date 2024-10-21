@@ -36,6 +36,11 @@ pre {
     background: hsl(222, 45%, 7%);
     padding: 2rem;
     border-radius: 1rem;
+
+    transform: 
+        perspective(5000px)
+        rotateY(20deg)
+        rotateX(20deg);
 }
 
 .selector{
