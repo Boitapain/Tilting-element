@@ -11,7 +11,7 @@
 }
 
 body {
-    background: hsl(224, 32%, 12%);
+    background: white;
     background-image: conic-gradient(
         from 0deg at 50% 50%,
         blue,
