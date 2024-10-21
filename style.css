@@ -81,8 +81,7 @@ pre {
     background: hsl(222, 45%, 7%);
     padding: 2rem;
     border-radius: 1rem;
-    border: 1px solid transparent; /* Set a transparent border */
-    position: relative;
+    position: relative; /* Keep this to position the pseudo-element correctly */
 
     transform-style: preserve-3d;
     transform: 
@@ -91,22 +90,16 @@ pre {
         rotateX(var(--rotateX));
 }
 
-code {
-    width: 75%; /* Set width to 75% of the pre element */
-    height: 75%; /* Set height to 75% of the pre element */
-    display: block; /* Block element to allow width and height */
-    overflow: auto; /* Enable scrolling if content overflows */
-}
-
 pre::after {
-    inset: -1rem;
+    content: ""; /* Ensure this is set */
+    inset: -2rem; /* Increase this value to make the grid larger */
     background: 
         linear-gradient(white 1px, transparent 1px),  /* Horizontal grid lines */
         linear-gradient(90deg, white 1px, transparent 1px); /* Vertical grid lines */
-    background-size: 50px 50px; /* Adjust the size for a more spaced-out grid */
+    background-size: 30px 30px; /* Adjust the size for a more spaced-out grid */
     border-radius: inherit; /* Ensure rounded corners */
-    transform: translateZ(-50px);
+    transform: translateZ(-50px); /* Position the background behind */
     opacity: 0.4; /* Slightly transparent for a subtle effect */
-    border-radius: 1rem; /* Match the parent border radius */
 }
+
 
