@@ -70,6 +70,6 @@ pre::after {
 }
 
 pre::after {
-    inset: 0rem;
+    inset: -1rem;
     background: linear-gradient(-45deg, red, blue);
 }
