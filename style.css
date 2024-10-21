@@ -50,3 +50,7 @@ pre {
 .property + .punctuation{
     color: var(--property);
 }
+
+pre > * {
+    text-shadow: 0 0 0.3em currentColor;
+}
