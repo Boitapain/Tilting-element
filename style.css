@@ -93,6 +93,13 @@ pre {
         rotateX(var(--rotateX));
 }
 
+code {
+    width: 75%; /* Set width to 75% of the pre element */
+    height: 75%; /* Set height to 75% of the pre element */
+    display: block; /* Block element to allow width and height */
+    overflow: auto; /* Enable scrolling if content overflows */
+}
+
 pre::after {
     inset: -1rem;
     background: 
