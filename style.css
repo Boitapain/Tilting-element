@@ -96,7 +96,7 @@ pre::after {
     background: 
         linear-gradient(white 1px, transparent 1px),  /* Horizontal grid lines */
         linear-gradient(90deg, white 1px, transparent 1px); /* Vertical grid lines */
-    background-size: 50px 50px; /* Adjust the size for a more spaced-out grid */
+    background-size: 30px 30px; /* Adjust the size for a more spaced-out grid */
     border-radius: inherit; /* Ensure rounded corners */
     transform: translateZ(-50px);
     opacity: 0.4; /* Slightly transparent for a subtle effect */
