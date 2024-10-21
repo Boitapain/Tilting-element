@@ -11,14 +11,7 @@
 }
 
 body {
-    background: hsl(224, 32%, 12%);
-    background-image: conic-gradient(
-        from 0deg at 50% 50%,
-        blue,
-        purple,
-        purple,
-        blue
-    );
+    background: hsl(0, 46%, 75%);
     background-blend-mode: multiply;
     color: white;
     min-block-size: 100dvh;
@@ -81,9 +74,11 @@ pre::before {
 pre::after {
     inset: -1rem;
     background: 
-        linear-gradient(white 1px, transparent 2px),  /* Horizontal grid lines */
-        linear-gradient(90deg, white 1px, transparent 2px); /* Vertical grid lines */
-    background-size: 20px 20px; /* Adjust the size to your preference */
+        linear-gradient(white 1px, transparent 1px),  /* Horizontal grid lines */
+        linear-gradient(90deg, white 1px, transparent 1px); /* Vertical grid lines */
+    background-size: 30px 30px; /* Adjust the size for a more spaced-out grid */
     border-radius: inherit;
     transform: translateZ(-50px);
+    opacity: 0.6; /* Slightly transparent for a subtle effect */
+    box-shadow: 0 0 10px rgb(228, 151, 128); /* Optional: add a subtle shadow */
 }
