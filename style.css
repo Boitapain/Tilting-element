@@ -77,6 +77,8 @@ pre {
     --punctuation: var(--white);
 
     font-size: 3rem;
+    width: 75%;
+    height: 75%;
     font-weight: bold;
     background: hsl(222, 45%, 7%);
     padding: 2rem;
@@ -92,7 +94,7 @@ pre {
 }
 
 pre::after {
-    inset: -1rem;
+    inset: 0;
     background: 
         linear-gradient(white 1px, transparent 1px),  /* Horizontal grid lines */
         linear-gradient(90deg, white 1px, transparent 1px); /* Vertical grid lines */
