@@ -71,14 +71,35 @@ pre::before {
     opacity: 0.5;
 }
 
+pre {
+    --selector: var(--pink);
+    --property: var(--teal);
+    --punctuation: var(--white);
+
+    font-size: 3rem;
+    font-weight: bold;
+    background: hsl(222, 45%, 7%);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid transparent; /* Set a transparent border */
+    position: relative;
+
+    transform-style: preserve-3d;
+    transform: 
+        perspective(5000px)
+        rotateY(var(--rotateY))
+        rotateX(var(--rotateX));
+}
+
 pre::after {
     inset: -1rem;
     background: 
         linear-gradient(white 1px, transparent 1px),  /* Horizontal grid lines */
         linear-gradient(90deg, white 1px, transparent 1px); /* Vertical grid lines */
     background-size: 30px 30px; /* Adjust the size for a more spaced-out grid */
-    border-radius: inherit;
+    border-radius: inherit; /* Ensure rounded corners */
     transform: translateZ(-50px);
-    opacity: 0.6; /* Slightly transparent for a subtle effect */
-    box-shadow: 0 0 10px rgb(228, 151, 128); /* Optional: add a subtle shadow */
+    opacity: 0.4; /* Slightly transparent for a subtle effect */
+    border-radius: 1rem; /* Match the parent border radius */
 }
+
