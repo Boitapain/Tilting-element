@@ -94,7 +94,7 @@ pre {
 }
 
 pre::after {
-    inset: 0;
+    inset: -1rem;
     background: 
         linear-gradient(white 1px, transparent 1px),  /* Horizontal grid lines */
         linear-gradient(90deg, white 1px, transparent 1px); /* Vertical grid lines */
