@@ -77,8 +77,6 @@ pre {
     --punctuation: var(--white);
 
     font-size: 3rem;
-    width: 75%;
-    height: 75%;
     font-weight: bold;
     background: hsl(222, 45%, 7%);
     padding: 2rem;
