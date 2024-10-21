@@ -88,10 +88,12 @@ pre {
         perspective(5000px)
         rotateY(var(--rotateY))
         rotateX(var(--rotateX));
+    overflow: hidden; /* Ensures that the background doesn't overflow */
 }
 
 pre::after {
     content: ""; /* Ensure this is set */
+    position: absolute; /* Ensure it is positioned correctly */
     inset: -2rem; /* Increase this value to make the grid larger */
     background: 
         linear-gradient(white 1px, transparent 1px),  /* Horizontal grid lines */
@@ -100,6 +102,8 @@ pre::after {
     border-radius: inherit; /* Ensure rounded corners */
     transform: translateZ(-50px); /* Position the background behind */
     opacity: 0.4; /* Slightly transparent for a subtle effect */
+    z-index: -1; /* Ensure it is behind the <pre> element */
 }
+
 
 
