@@ -39,6 +39,7 @@ pre {
 
     position: relative;
 
+    transform-style: preserve-3d;
     transform: 
         perspective(5000px)
         rotateY(20deg)
