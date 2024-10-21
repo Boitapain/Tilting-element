@@ -9,3 +9,6 @@ This project demonstrates a tilting object that dynamically tracks the movement 
 
 ## Purpose
 The main objective is to implement a smooth, responsive tilting effect that follows the user's mouse cursor.
+
+## Demo
+You can see a live demo of the project [here](https://tilting-element.vercel.app/).
