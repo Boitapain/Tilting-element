@@ -1,7 +1,7 @@
 const pre = document.querySelector("pre");
 
 // define max angle to rotate
-const max_angle = 45
+const max_angle = 20
 
 document.addEventListener("mousemove", (e) => {
     rotateElement(e, pre);
