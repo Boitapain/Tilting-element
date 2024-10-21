@@ -81,8 +81,8 @@ pre::before {
 pre::after {
     inset: -1rem;
     background: 
-        linear-gradient(white 1px, transparent 1px),  /* Horizontal grid lines */
-        linear-gradient(90deg, white 1px, transparent 1px); /* Vertical grid lines */
+        linear-gradient(white 1px, transparent 2px),  /* Horizontal grid lines */
+        linear-gradient(90deg, white 1px, transparent 2px); /* Vertical grid lines */
     background-size: 20px 20px; /* Adjust the size to your preference */
     border-radius: inherit;
     transform: translateZ(-50px);
