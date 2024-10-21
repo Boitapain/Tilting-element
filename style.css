@@ -37,6 +37,8 @@ pre {
     padding: 2rem;
     border-radius: 1rem;
 
+    position: relative;
+
     transform: 
         perspective(5000px)
         rotateY(20deg)
@@ -58,4 +60,16 @@ pre {
 
 pre > * {
     text-shadow: 0 0 0.3em currentColor;
+}
+
+pre::before,
+pre::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+
+pre::after {
+    inset: 0rem;
+    background: linear-gradient(-45deg, red, blue);
 }
