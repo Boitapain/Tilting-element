@@ -81,7 +81,7 @@ pre {
     background: hsl(222, 45%, 7%);
     padding: 2rem;
     border-radius: 1rem;
-    border: 1px solid transparent; /* Set a transparent border */
+    border: 1px solid; /* Set a transparent border */
     position: relative;
 
     transform-style: preserve-3d;
