@@ -101,5 +101,6 @@ pre::after {
     transform: translateZ(-50px);
     opacity: 0.4; /* Slightly transparent for a subtle effect */
     border-radius: 1rem; /* Match the parent border radius */
+    border: 1px solid white;
 }
 
